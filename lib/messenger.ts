@@ -1,4 +1,4 @@
-import { embedText, generateReply } from "@/lib/openai";
+import { embedText, generateReply } from "@/lib/gemini";
 import { prisma } from "@/lib/prisma";
 import { buildRagPrompt } from "@/lib/text";
 import { retrieveRelevantChunks } from "@/lib/vector";

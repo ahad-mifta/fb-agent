@@ -2,7 +2,7 @@ import * as cheerio from "cheerio";
 import pdf from "pdf-parse";
 import { KnowledgeSourceStatus, KnowledgeSourceType } from "@prisma/client";
 import { fetchLatestPagePosts } from "@/lib/meta";
-import { embedText } from "@/lib/openai";
+import { embedText } from "@/lib/gemini";
 import { prisma } from "@/lib/prisma";
 import { chunkText, normalizeText } from "@/lib/text";
 import { saveChunkEmbedding } from "@/lib/vector";
