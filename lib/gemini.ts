@@ -13,7 +13,8 @@ export async function embedText(input: string): Promise<number[]> {
     model: env.GEMINI_EMBEDDING_MODEL
   });
 
-  const response = await model.embedContent(input.replace(/\s+/g, " ").trim(), {
+  const response = await model.embedContent({
+    content: input.replace(/\s+/g, " ").trim(),
     taskType: TaskType.RETRIEVAL_DOCUMENT
   });
 
